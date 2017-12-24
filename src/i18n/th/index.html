@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="📦 Parcel" />
+  <meta property="og:url" content="https://parceljs.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Blazing fast, zero configuration web application bundler" />
+  <title>📦 Parcel</title>
+  <link type="text/css" rel="stylesheet" href="assets/home.css"/>
+  <link type="text/css" rel="stylesheet" href="assets/hljs-github.min.css"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110647385-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-110647385-1');
+  </script>
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/logo.svg" alt="Parcel">
+    <h2>เครื่องมือในการรวมไฟล์สำหรับเว็บแอพพลิเคชั่น ที่เร็วสุดสุด และพร้อมใช้งานได้ทันที</h2>
+    <div class="parcel">
+      <img src="assets/parcel-back.png" srcset="assets/parcel-back@2x.png 2x, assets/parcel-back@3x.png 3x">
+      <div class="icons"></div>
+      <img src="assets/parcel-front.png" srcset="assets/parcel-front@2x.png 2x, assets/parcel-front@3x.png 3x">
+    </div>
+    <a class="button get-started" href="getting_started.html">เริ่มต้น</a>
+    <a class="button" href="https://github.com/parcel-bundler/parcel" target="_blank">GitHub</a>
+
+    <nav class="links">
+      <div class="language-dropdown">
+        <span>🇹🇭</span>
+        <ul>
+          <li><a href="https://en.parceljs.org">🇺🇸</a></li>
+          <li><a href="https://pt.parceljs.org">🇧🇷</a></li>
+          <li><a href="https://ko.parceljs.org">🇰🇷</a></li>
+          <li><a href="https://ru.parceljs.org">🇷🇺</a></li>
+          <li><a href="https://zh.parceljs.org">🇨🇳</a></li>
+        </ul>
+      </div>
+      <a href="getting_started.html">เอกสารประกอบ</a>
+      <a href="https://github.com/parcel-bundler/parcel" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="features">
+      <section>
+        <h3>🚀 รวมไฟล์ได้แบบเร็วสุดสุด</h3>
+        <p>Parcel ใช้การทำงานแบบ worker เพื่อให้เกิดการคอมไพล์แบบหลายคอร์, และมีระบบแคชแบบไฟล์ เพื่อช่วยให้การสร้างหน้าเว็บเป็นไปแบบรวดเร็ว ถึงแม้จะเพิ่งรันเพื่อสร้างใหม่อีกครั้ง</p>
+      </section>
+      <section>
+        <h3>📦 มัดรวมไฟล์ให้เสร็จสรรพ</h3>
+        <p>Parcel กับความสามารถที่พร้อมใช้งานได้ทันที สำหรับไฟล์ JS, CSS, HTML, ไฟล์อื่นๆ - โดยไม่ต้องพึ่งปลั๊กอินเสริมใดๆ</p>
+      </section>
+      <section>
+        <h3>🐠 แปลงไฟล์ให้อัตโนมัติ</h3>
+        <p>โค๊ดของคุณจะถูกแปลงให้โดยอัตโนมัติ เมื่อมันจำเป็นต้องใช้ Babel, PostCSS, และ PostHTML - หรือผ่าน<code>node_modules</code>.</p>
+      </section>
+      <section>
+        <h3>✂️ แบ่งแยกโค๊ดอัตโนมัติ ไม่ต้องตั้งค่าซักแอะ</h3>
+        <p>เพียงเขียนโค๊ดแบบไดนามิก <code>import()</code>, Parcel จะทำรวมไฟล์ในลักษณะแบบแยกออกเป็นหลายไฟล์ เพื่อให้การโหลดครั้งแรก ใช้เฉพาะที่จำเป็นเท่านั้น</p>
+      </section>
+      <section>
+        <h3>🔥 แทนที่โมดูลที่เปลี่ยนแปลงให้เอง</h3>
+        <p>ในระหว่างการพัฒนา หากมีการเปลี่ยนแปลงโมดูล, Parcel จะทำการอัพเดตโมดูลบนบราวเซอร์ให้โดยอัตโนมัติ แน่นอนคุณไม่ต้องตั้งค่าใดใดเลย</p>
+      </section>
+      <section>
+        <h3>🚨 ไฟล์บันทึกความผิดพลาด ที่อ่านง่าย</h3>
+        <p>Parcelจะแสดงข้อความสีที่เน้นจุดที่ผิดพลาด เพื่อให้แก้ปัญหาได้ตรงจุด</p>
+      </section>
+    </div>
+
+    <section>
+      <h2>สวัสดีชาวโลก</h2>
+      <p>เพียงแค่กำหนดไฟล์ HTML เริ่มต้น, Parcel จะสร้างแอพพลิเคชั่นให้คุณเอง โดยไล่ตามจากไฟล์ที่เกี่ยวข้องทั้งหมด</p>
+      <div class="examples">
+      <div class="example">
+        <p><strong>✏️ index.html</strong></p>
+        <pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+      </div>
+
+      <div class="example">
+        <p><strong>🛠 index.js</strong></p>
+        <pre class="hljs"><code><span class="hljs-comment">// import another component</span>
+<span class="hljs-keyword">import</span> main <span class="hljs-keyword">from</span> <span class="hljs-string">'./main'</span>;
+
+main();</code></pre>
+      </div>
+
+      <div class="example">
+        <p><strong>🛠 main.js</strong></p>
+        <pre class="hljs"><code><span class="hljs-comment">// import a CSS module</span>
+<span class="hljs-keyword">import</span> classes <span class="hljs-keyword">from</span> <span class="hljs-string">'./main.css'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
+  <span class="hljs-built_in">console</span>.log(classes.main);
+};</code></pre>
+      </div>
+
+      <div class="example">
+        <p><strong>💅 main.css</strong></p>
+        <pre class="hljs"><code><span class="hljs-selector-class">.main</span> {
+  <span class="hljs-comment">/* Reference an image file */</span>
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'./images/background.png'</span>);
+  <span class="hljs-attribute">color</span>: red;
+}</code></pre></div>
+      </div>
+
+      <p>เพียงแค่รันคำสั่ง <code>parcel index.html</code> เพื่อรัน server (ใช้ในการพัฒนา). ซึ่งจะมีการดึงไฟล์ Javascript, CSS, images และไฟล์อื่นๆ เข้ามาร่วมด้วย 👌</p>
+    </section>
+
+    <section>
+      <h2>วัดผลประสิทธิภาพ</h2>
+      <table>
+        <tr>
+          <th>Bundler</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>browserify</td>
+          <td>22.98s</td>
+        </tr>
+        <tr>
+          <td>webpack</td>
+          <td>20.71s</td>
+        </tr>
+        <tr>
+          <td><strong>parcel</strong></td>
+          <td><strong>9.98s</strong></td>
+        </tr>
+        <tr>
+          <td><strong>parcel - with cache</strong></td>
+          <td><strong>2.64s</strong></td>
+        </tr>
+      </table>
+      <p>ข้อมูลยึดจากแอพพลิชั่นระดับปานกลางที่ประกอบไปด้วยโมดูลจำนวน 1726 โมดูล, ขนาดไฟล์โดยรวม 6.5M แบบที่ยังไม่ได้บีบอัด. จาก MacBook Pro ปี 2016 ขนาด 4 CPUs.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="button" href="getting_started.html">เริ่มต้น</a>
+    <div class="content">
+      <nav>
+        <h3>เอกสารประกอบ</h3>
+        <div>
+          <ul>
+            <li><a href="getting_started.html">🚀 เริ่มต้น</a></li>
+            <li><a href="assets.html">📦 ไฟล์ที่ใช้งาน</a></li>
+            <li><a href="transforms.html">🐠 การแปลงไฟล์</a></li>
+          </ul>
+          <ul>
+            <li><a href="code_splitting.html">✂️ การแบ่งแยกโค๊ด</a></li>
+            <li><a href="hmr.html">🔥 แทนที่โมดูลที่เปลี่ยนแปลง</a></li>
+            <li><a href="production.html">✨ กระบวนการเมื่อเสร็จสมบูรณ์</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav>
+        <h3>ลิงค์</h3>
+        <ul>
+          <li><a href="https://github.com/parcel-bundler/parcel" target="_blank">GitHub</a></li>
+          <li><a href="https://www.npmjs.com/package/parcel-bundler" target="_blank">npm</a></li>
+          <li><a href="https://twitter.com/parceljs" target="_blank">Twitter</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      ลิขสิทธิ์ ©
+      <script>document.write(new Date().getFullYear())</script>
+      Devon Govett. เว็บไซต์สำหรับ <a href="https://github.com/parcel-bundler/website" target="_blank">โอเพ่นซอร์ส</a>.
+    </div>
+  </footer>
+
+  <script src="assets/icons.js"></script>
+</body>
+</html>
